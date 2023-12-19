@@ -1,0 +1,22 @@
+.tor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.H1 {
+    color: #a1a1a1;
+    font-size: 70px;
+}
+
+.h {
+    color: #4e4e4e;
+}
+
+.p{
+    color: #4e4e4e;
+
+}

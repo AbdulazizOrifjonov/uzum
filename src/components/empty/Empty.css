@@ -1,0 +1,16 @@
+.empty{
+    text-align: center;
+    padding: 100px 0;
+}
+.empty p{
+    padding: 16px 0;
+    color: #555;
+}
+.empty button{
+    padding: 10px 20px;
+    background: var(--bg-py);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}

@@ -1,0 +1,310 @@
+.singil {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 100px;
+
+
+}
+
+.ot {
+    color: #00aaff;
+    font-size: 40px;
+    /* z-index: 1; */
+    position: absolute;
+
+}
+
+
+.singil_route {
+    width: 500px;
+    height: 554px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5px;
+}
+
+.foyiz {
+    width: 390px;
+    height: 549px;
+    border-radius: 8px;
+    cursor: pointer;
+    /* position: absolute; */
+    user-select: none;
+
+}
+
+.foyizsiz {
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mains {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 390px;
+    height: 549px; */
+
+
+}
+
+.route {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+
+}
+
+
+
+.singil_route_in {
+    width: 100%;
+    height: auto;
+    padding: 10px 30px 0 0;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.display {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+
+}
+
+#id {
+    padding-top: 20px;
+}
+
+.displays {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.displays button {
+    font-size: 28px !important;
+    font: 1px;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    cursor: pointer;
+}
+
+.title {
+    padding-bottom: 20px;
+}
+
+.hr {
+    width: 100%;
+    color: #e1e1e1;
+    border: 1px solid #a1a1a1;
+
+}
+
+.btsA {
+    background-color: var(--bg-py);
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 3px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qator {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 20px;
+
+}
+
+.aka {
+    padding: 3px 10px;
+    width: 100%;
+    height: 50px;
+    background-color: #a9a9a9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.aka:hover{
+    background-color: #cccccc;
+  
+}
+
+.put {
+    padding: 3px;
+    background-color: var(--bg-gold);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.qrcode {
+  display: flex;
+  align-items: center;
+}
+
+.banner {
+    width: 100%;
+    height: 50px;
+    background-color: var(--bg-py);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+ 
+
+.banners {
+    width: 100%;
+    height: 50px;
+
+    border: 2px solid var(--bg-py);
+    color: var(--bg-py);
+    border-radius: 8px;
+    font-size: 18px;
+
+}
+.qrcode{
+    color: #555;
+    padding-right: 40%;
+    font-size: 18px;
+}
+.luk {
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+/* .style{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+.style:hover{
+    background-color:#a1a1a1;
+} */
+.yulduz{
+    width: 15px;
+
+}
+
+
+
+.singil {
+    display: grid;
+    grid-template-columns: 1fr 660px;
+    grid-gap: 16px;
+    position: relative;
+}
+
+.singil_route_in{
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    padding: 0 16px;
+    width: 100%;
+    max-height: 100%;
+    height: 700px;
+    overflow: auto;
+    padding-top: 40px;
+    
+}
+.singil_route {
+    border: 1px solid #aaa;
+    height: 551px;
+    border-radius: 8px;
+    padding: 16px;
+    position: sticky;
+    top: 16px;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+.about{
+display: flex;
+align-items: center;
+justify-content: center;
+  }
+  .flex_row{
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+    background-color: #e69a9a;
+  }
+  
+.thumbnail{
+  padding-left: 20px;
+}
+.clicked{
+  border: 5px solid black;
+}
+.btns{
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  background: grey;
+}
+.cap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cc3636;
+}
+.gap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color: #661414;
+}
+.flex_row{
+    display: flex;
+    flex-direction: column;
+    background: blue;
+}
+.btns{
+z-index: 1;
+position: relative;
+}

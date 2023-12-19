@@ -1,0 +1,47 @@
+.katagorya {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: auto;
+        gap: 2px;
+        /* padding: 0  20px 0 0; */
+        border-right: 1px solid rgb(173, 173, 173)
+}
+.gold {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: auto;
+        gap: 2px;
+        /* padding: 0  20px 0 0; */
+        /* border-right: 1px solid rgb(173, 173, 173) */
+}
+.johan{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.turkumlar {
+    display: flex;
+    align-items: center;
+    padding-right: 40%;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    /* background-color: #f4f4f4f4; */
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    color: #5a5a5a;
+    cursor: pointer;
+}
+
+.turkumlar:hover{
+background-color: #e6dddd;
+color: var(--bg-py);
+}

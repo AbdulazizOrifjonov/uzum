@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  user-select: none;
+}
+:root{
+  --bg-py: #7000FF;
+  --bg-sy: #F2F4F7;
+  --bg-gold: #FDFE00;
+}
+button{
+  cursor: pointer;
+}
+.container{
+  max-width: 1250px;
+  margin: auto;
+}
+@media screen and (max-width:1280px) {
+ .container{
+  width: 100%;
+  padding: 0 20px;
+ } 
+}
+li{
+  list-style: none;
+}
+a{
+  color: inherit;
+  text-decoration: inherit;
+}
+
+
+button{
+  cursor: pointer;
+}
