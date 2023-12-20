@@ -186,7 +186,19 @@
     cursor: pointer;
 
 }
- 
+ .banner:hover{
+    color: var(--bg-py);
+    background-color: #fff;
+    border: 2px solid var(--bg-py);
+    transition: 0.5s !important;
+
+ }
+ .banners:hover{
+    background-color: var(--bg-py);
+    color: #fff;
+    transition: 0.5s !important;
+
+ }
 
 .banners {
     width: 100%;

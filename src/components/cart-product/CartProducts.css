@@ -16,6 +16,7 @@
 }
 
 .cart__item {
+    cursor: pointer;
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-bottom: 1px solid #aaa;

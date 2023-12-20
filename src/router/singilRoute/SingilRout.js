@@ -7,6 +7,9 @@ import { FaRegHeart, FaHeart } from 'react-icons/fa';
 // import { GoChevronLeft } from "react-icons/go";
 import { GoChevronRight } from "react-icons/go";
 import yulduz from "../../assets/yulduz.png"
+import { incCart, decCart  } from "../../context/cartSlice";
+
+
 function SingilRout({ data }) {
   const wishes = useSelector((state) => state.wishes.value);
   const dispatch = useDispatch();
@@ -61,10 +64,11 @@ function SingilRout({ data }) {
           <div className="qator">
 
           <div className="displays">
-
-          <button>-</button>
-          <span>2</span>
-          <button>+</button>
+          <div className="cart__counter">
+                <button disabled={oneItem.quantity <= 1} onClick={() => dispatch(decCart(oneItem))}>-</button>
+                <span>{oneItem.quantity}</span>
+                <button onClick={() => dispatch(incCart(oneItem))}>+</button>
+              </div>
           </div>
           <p>sotuvga 235 dona bor</p>
           </div>
@@ -78,7 +82,7 @@ function SingilRout({ data }) {
           <div className='aka'> <p className='put'> Oyiga 233 478 so'mdan  <GoChevronRight/> </p> <p className='qrcode'>muddatli to'lov</p>  <GoChevronRight className='style'/> </div>
           <div className="luk">
 
-          <button className='banner'> Savatga qo'shish </button>
+          <button onClick={()=>dispatch(incCart(oneItem)) } className='banner'> Savatga qo'shish </button>
           <button className='banners'> Tugmani 1 bosishda xarid qilish </button>
           </div>
         </div>

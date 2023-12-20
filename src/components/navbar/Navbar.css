@@ -77,6 +77,7 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     overflow: hidden;
+    cursor: pointer;
  }
 .noUndefoend{
     width: 100px;
@@ -163,7 +164,11 @@ border-bottom: none;
     .nav__item svg {
         font-size: 18px;
     }
-
+    .cat{
+        display: none;
+       
+        
+    }
 }
 
 @media screen and (max-width: 600px) {

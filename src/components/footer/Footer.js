@@ -30,11 +30,9 @@ function Footer() {
   return (
     <div className="container">
 
-    <div className='containers'>
-    </div>
+     
       <div className="containera">
 
-      <button className='nok'><h1>Yana ko'rsatish</h1></button>
       </div>
       <div className="footer">
         <div className="footer__inner">

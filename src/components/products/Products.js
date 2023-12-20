@@ -8,19 +8,26 @@ import { TbShoppingBagPlus } from "react-icons/tb";
 import { incCart } from "../../context/cartSlice";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useState } from "react";
+const  AMOUNT = 5
+
 function Products({ data }) {
+  const [count ,  setCount] = useState(1)
   const wishes = useSelector((s) => s.wishes.value);
   const dispatch = useDispatch();
+
 const notify = () => {
   toast(" 🛒+ Savatga Saqlandi ",{
     position: toast.POSITION.TOP_CENTER
   });
+ 
 }
   return (
+    <>
     <div className="products__wrapper">
-      {data?.map((el) => (
+      {data?.slice(0, count*AMOUNT).map((el) => (
     
-
+        
         <div key={el.id} className="products__card">
           <Link to={ `/product/${el.id}`} className="products__image">
             <img src={el.url} alt="" />
@@ -43,7 +50,7 @@ const notify = () => {
               <FaHeart style={{ color: "var(--bg-py)" }} />
             ) : (
               <FaRegHeart />
-            )}
+              )}
           </div>
           <div
             onClick={() => dispatch(incCart(el))}
@@ -51,11 +58,30 @@ const notify = () => {
             >
             <button className="products__carts" onClick={ e => notify()}>            <TbShoppingBagPlus />
 </button>
-            <ToastContainer/>
+            <ToastContainer
+            position="top-center"
+            autoClose={1333}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+            />
           </div>
         </div>
       ))}
     </div>
+    {
+      data.length > count*AMOUNT ? 
+
+      <button className='nok' onClick={()=> setCount( p => p+5)}>  <h1 className="font">Yana ko'rsatish</h1></button>
+
+      : <></>
+    }
+      </>
   );
 }
 
